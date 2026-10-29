@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weatherly helps travelers plan for the weather before they go."
+    />
+    <title>Weatherly | Travel Weather Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">W</div>
+          <div>
+            <p class="brand-name">Weatherly</p>
+            <p class="brand-tag">Travel weather planner</p>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#planning">Planning</a>
+          <a href="#forecast">Forecast</a>
+          <a href="#essentials">Essentials</a>
+        </nav>
+
+        <button class="nav-button">Start planning</button>
+      </header>
+
+      <main>
+        <section class="hero" id="planning">
+          <div class="hero-copy">
+            <p class="eyebrow">Plan better trips</p>
+            <h1>Travel smart with the weather before you pack.</h1>
+            <p class="subcopy">
+              Design your ideal trip by checking conditions, packing needs, and
+              local travel suggestions in one place.
+            </p>
+
+            <form class="planner-form" id="plannerForm">
+              <label>
+                Destination
+                <input id="destination" type="text" value="Santorini" />
+              </label>
+              <label>
+                Dates
+                <input id="dates" type="text" value="12 Jun – 18 Jun" />
+              </label>
+              <label>
+                Travelers
+                <select id="travelers">
+                  <option>2 travelers</option>
+                  <option>3 travelers</option>
+                  <option>4 travelers</option>
+                  <option>Solo trip</option>
+                </select>
+              </label>
+              <button type="submit">Check forecast</button>
+            </form>
+          </div>
+
+          <div class="hero-panel" aria-live="polite">
+            <div class="panel-topbar">
+              <span>Now</span>
+              <span class="chip">Clear skies</span>
+            </div>
+
+            <div class="temperature-row">
+              <div>
+                <p class="city-name" id="cityName">Santorini</p>
+                <p class="temp" id="currentTemp">28°</p>
+              </div>
+              <div class="weather-icon" aria-hidden="true">☀️</div>
+            </div>
+
+            <div class="metric-grid">
+              <div>
+                <span>Feels like</span>
+                <strong id="feelsLike">30°</strong>
+              </div>
+              <div>
+                <span>Humidity</span>
+                <strong id="humidity">58%</strong>
+              </div>
+              <div>
+                <span>Wind</span>
+                <strong id="wind">9 km/h</strong>
+              </div>
+              <div>
+                <span>UV</span>
+                <strong id="uv">5 / 10</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="forecast" id="forecast">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Forecast</p>
+              <h2>What to expect this week</h2>
+            </div>
+            <button class="ghost-button">Export trip plan</button>
+          </div>
+
+          <div class="forecast-grid" id="forecastGrid"></div>
+        </section>
+
+        <section class="insights" id="essentials">
+          <article class="info-card highlight-card">
+            <p class="eyebrow">Travel alert</p>
+            <h3>Best window for sightseeing</h3>
+            <p>
+              Early mornings and evenings are ideal for outdoor exploring, with a
+              gentle sea breeze keeping conditions comfortable.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <p class="eyebrow">Packing list</p>
+            <ul>
+              <li>Lightweight layers</li>
+              <li>Sunscreen and sunglasses</li>
+              <li>Comfortable walking shoes</li>
+              <li>Reusable water bottle</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <p class="eyebrow">Trip rhythm</p>
+            <div class="mini-bars" aria-hidden="true">
+              <span class="bar bar-1"></span>
+              <span class="bar bar-2"></span>
+              <span class="bar bar-3"></span>
+              <span class="bar bar-4"></span>
+            </div>
+            <p>Warm and bright days with cooler evenings. Great for coastal drives.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
